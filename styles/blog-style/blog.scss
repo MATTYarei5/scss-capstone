@@ -1,0 +1,61 @@
+.blog-header {
+  @include header-color;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 14px;
+
+  .all-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10%;
+
+    a {
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    h6 {
+      font-family: "Roboto Slab", "Times New Roman", serif;
+      font-size: 25px;
+      margin: 5px 0px 10px;
+    }
+
+    .author-tag {
+      margin-bottom: 50px;
+    }
+
+    .thousand-word-uncat {
+      color: #89229b;
+    }
+
+    .elements-uncat {
+      color: #00bcd4;
+    }
+
+    .more-tags-uncat {
+      color: #f44336;
+    }
+
+    .html-uncat {
+      color: #ff9800;
+    }
+
+    .links-uncat {
+      color: #e91e63;
+    }
+
+    .hierarchy-cat {
+      color: #4caf50;
+    }
+
+    .hello-uncat {
+      color: #89229b;
+    }
+  }
+}

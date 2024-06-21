@@ -1,0 +1,235 @@
+.hero-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/parallax_1.jpeg);
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+.hero-container img {
+  filter: brightness(50%);
+  align-self: center;
+  width: 95%;
+}
+.hero-container .hero-text {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-container .hero-text h1 {
+  font-size: 67px;
+  color: white;
+}
+.hero-container .hero-text p {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+.hero-container .hero-text .see-more-button {
+  background-color: #e91e63;
+  padding: 15px 33px;
+  color: white;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.main-container h2 {
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 37px;
+}
+.main-container .section-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main-container .section-container .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .section-container h4 {
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-size: 18px;
+}
+.main-container .section-container p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  font-size: 14px;
+}
+
+.about-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/images/contact.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 250px;
+  margin: 0px 0px 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+}
+.about-container h2 {
+  color: white;
+  margin-left: 15%;
+  text-align: justify;
+}
+.about-container p {
+  color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: justify;
+}
+.about-container img {
+  width: 80%;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog-container .blog-content {
+  display: flex;
+  justify-content: center;
+}
+.blog-container .blog-content .thousand-words-uncat {
+  color: #89229b;
+}
+.blog-container .blog-content .elements-uncat {
+  color: #00bcd2;
+}
+.blog-container .blog-content .more-tags-uncat {
+  color: #f44336;
+}
+.blog-container .blog-content div {
+  width: 30%;
+  padding-left: 20px;
+}
+.blog-container .blog-content div a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+.blog-container .blog-content div h6 {
+  font-size: 18px;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  color: #3c4858;
+}
+.blog-container .blog-content div p {
+  font-size: 14px;
+}
+
+.company-data-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/images/contact.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin-top: 5%;
+}
+.company-data-container h2 {
+  text-align: left;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-size: 37px;
+  margin-left: 10%;
+}
+.company-data-container .location div,
+.company-data-container .phone-number div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 10%;
+}
+.company-data-container .location div i,
+.company-data-container .phone-number div i {
+  font-size: 35px;
+  color: white;
+}
+.company-data-container .location div p,
+.company-data-container .phone-number div p {
+  margin-left: 0;
+}
+.company-data-container .location p,
+.company-data-container .phone-number p {
+  margin-left: 12.7%;
+}
+
+@media (max-width: 900px) {
+  .hero-container {
+    width: 100%;
+    height: 500px;
+  }
+  .hero-container img {
+    width: 100%;
+    height: 450px;
+  }
+  .hero-container .hero-text h1 {
+    font-size: 36px;
+  }
+  .main-container .hero-text {
+    font-size: 28px;
+  }
+  .main-container .section-container {
+    flex-direction: column;
+  }
+  .main-container .about-container {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    height: 400px;
+    align-items: center;
+  }
+  .main-container .about-container h2 {
+    font-size: 28px;
+  }
+  .main-container .about-container p {
+    font-size: 18px;
+  }
+  .blog-container h2 {
+    font-size: 24px;
+  }
+  .blog-container .blog-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .blog-container .blog-content div {
+    width: 100%;
+    padding-left: 0;
+  }
+  .company-data-container h2 {
+    font-size: 24px;
+  }
+  .company-data-container h2 .location div,
+  .company-data-container h2 .phone-number div {
+    font-size: 18px;
+  }
+  .company-data-container h2 .location p,
+  .company-data-container h2 .phone-number p {
+    font-size: 14px;
+  }
+  footer {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=index-styles.css.map */
